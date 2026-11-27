@@ -1,0 +1,84 @@
+.cp {
+  --cp-line: rgba(128, 128, 128, 0.35);
+  --cp-good: #3a9d6f;
+  --cp-bad: #d0482a;
+  display: grid;
+  gap: 1.25rem;
+}
+.cp-drop {
+  display: grid;
+  gap: 0.6rem;
+  justify-items: center;
+  padding: clamp(1.5rem, 6vw, 3rem);
+  border: 2px dashed var(--cp-line);
+  border-radius: 14px;
+  text-align: center;
+}
+.cp-drop.is-dragging {
+  border-color: var(--cp-good);
+  background: rgba(58, 157, 111, 0.08);
+}
+.cp-drop-hint {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.72;
+}
+.cp-file-label {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--cp-line);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+.cp-file-label input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.cp-status {
+  margin: 0;
+}
+.cp-status.is-error {
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--cp-bad);
+}
+.cp-controls {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 28rem;
+}
+.cp-field {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.92rem;
+}
+.cp-preview {
+  display: grid;
+  justify-items: center;
+}
+.cp-art {
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--cp-line);
+  border-radius: 6px;
+}
+.cp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.cp-button {
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--cp-line);
+  border-radius: 999px;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
