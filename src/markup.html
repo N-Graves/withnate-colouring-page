@@ -1,0 +1,27 @@
+      <div class="cp" data-cp>
+        <div class="cp-drop" data-cp-drop>
+          <p><strong>Drop a photo here</strong></p>
+          <label class="cp-file-label">
+            Choose a file
+            <input type="file" accept="image/*" />
+          </label>
+          <p class="cp-drop-hint">Or paste one from your clipboard. It never leaves this page.</p>
+        </div>
+
+        <p class="cp-status" data-cp-status hidden></p>
+
+        <div class="cp-controls" data-cp-controls hidden>
+          <label class="cp-field">
+            <span data-cp-detail-label>Detail: Balanced</span>
+            <input type="range" min="1" max="5" step="1" value="3" data-cp-detail />
+          </label>
+        </div>
+
+        <div class="cp-preview" data-cp-preview></div>
+
+        <div class="cp-actions">
+          <a class="cp-button" data-cp-download-a4 hidden>Download for printing on A4</a>
+          <a class="cp-button" data-cp-download hidden>Download just the picture</a>
+          <button type="button" class="cp-button" data-cp-reset hidden>Use a different photo</button>
+        </div>
+      </div>
